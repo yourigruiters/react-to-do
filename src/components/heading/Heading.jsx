@@ -1,14 +1,16 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
-const Heading = ({ content }) => {
-  const alert2 = (data) => {
-    alert(data);
-  };
+const Heading = ({ beginNaam }) => {
+  const [naam, setNaam] = useState(0);
+
+  useEffect(() => {
+    setNaam(beginNaam);
+  }, []);
 
   return (
     <div>
-      <h1>{content}</h1>
-      <button onClick={() => alert2("doei")}>Klik hier</button>
+      <h1>{naam}</h1>
+      <button onClick={() => setNaam(naam + 1)}>Klik hier</button>
     </div>
   );
 };
