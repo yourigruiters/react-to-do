@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 
-const Heading = ({ beginNaam }) => {
+const Heading = () => {
   return (
     <div>
       <h1>Todo applicatie</h1>

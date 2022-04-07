@@ -41,7 +41,7 @@ const App = () => {
           />
         ))}
         <TodoForm addTodo={addTodo} />
-        <Heading beginNaam={1} />
+        <Heading />
       </div>
     </div>
   );
