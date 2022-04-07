@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 const Heading = ({ beginNaam }) => {
   return (
     <div>
-      <h1>Youri Gruiters</h1>
+      <h1>Todo applicatie</h1>
     </div>
   );
 };
